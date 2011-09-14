@@ -1,3 +1,6 @@
+steal('ss/controller/state_machine',
+function() {
+
 SS.StateMachine.Controller.extend('SS.StateMachine.Controller.VariableListener',
 {
   onDocument: true
@@ -23,7 +26,6 @@ SS.StateMachine.Controller.extend('SS.StateMachine.Controller.VariableListener',
     };
       
     this._super(document.body);
-  }
   },
   
   "variable.set subscribe":    function(e, p) { this.checkEvent(e, p); },
@@ -48,3 +50,5 @@ SS.StateMachine.Controller.extend('SS.StateMachine.Controller.VariableListener',
   }
 }
 );
+
+});

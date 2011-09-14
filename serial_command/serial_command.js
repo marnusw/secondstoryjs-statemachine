@@ -1,3 +1,6 @@
+steal('ss/controller/state_machine',
+function() {
+
 SS.StateMachine.Controller.extend('SS.StateMachine.Controller.SerialCommand',
 {
   onDocument: true
@@ -41,12 +44,4 @@ SS.StateMachine.Controller.extend('SS.StateMachine.Controller.SerialCommand',
 }
 );
 
-/*
-$.Controller.extend('FrontController',
-{
-  "** subscribe": function (event_name, params) {
-    //Check if the current event is mapped to a command.  If so, run it.
-    new CommandController(event_name, params);
-  }
-}
-*/
+});

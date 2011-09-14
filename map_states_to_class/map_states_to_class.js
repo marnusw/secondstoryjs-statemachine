@@ -1,5 +1,5 @@
-steal.plugins("ss/controller/state_machine")
-     .then(function($) {
+steal("ss/controller/state_machine",
+function($) {
 
   $.Controller.extend('SS.Controller.MapStatesToClass',
   {

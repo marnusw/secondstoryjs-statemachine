@@ -1,7 +1,7 @@
-steal.plugins('jquery/controller/subscribe', 
-              'jquery/controller',
-              'jquery/lang/openajax')
-     .then(function($) {
+steal('jquery/controller/subscribe', 
+      'jquery/controller',
+      'jquery/lang/openajax',
+function($) {
 
   $.Controller.extend("SS.Controller.StateMachine",
   {
@@ -216,4 +216,5 @@ steal.plugins('jquery/controller/subscribe',
     }
   }
   );
-}).then("map_states_to_class/map_states_to_class")
+})
+.then("./map_states_to_class/map_states_to_class.js")
